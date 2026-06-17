@@ -5,21 +5,41 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: "Poppins";
-}
+}/*applies to all elements
+    margin: 0; removes default margin
+    padding: 0; removes default padding
+    box-sizing: border-box; includes padding and border in element's total width and height
+    text-decoration: none; removes underline from links
+    scroll-behavior: smooth; enables smooth scrolling for anchor links
+    font-family: "Poppins"; sets the default font for the page
+*/
 :root {
   --bg-color: #080808;
   --second-bg-color: #101010;
   --text-color: white;
   --main-color: #ea580c;
 }
+/*define CSS variables for background color, secondary background color, text color, and main color
+    --bg-color: #080808; sets the primary background 
+    --second-bg-color: #101010; sets the secondary background color
+    --text-color: white; sets the text color
+    --main-color: #ea580c; sets the main accent color
+*/
 html {
   font-size: 60%;
   overflow-x: hidden;
 }
+/*sets the base font size to 60% of the default size (usually 16px), for easier conversions
+    overflow-x: hidden; prevents horizontal scrolling
+*/
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+/*sets the background color and text color for the body using the defined CSS variables
+    background-color: var(--bg-color); sets the background color to the primary background color
+    color: var(--text-color); sets the text color to the defined text color
+*/
 .header{
     position: fixed;
     width: 100%;
@@ -33,12 +53,29 @@ body{
     align-items: center;
     z-index: 1000;
 }
+/*styles the header to be fixed at the top of the page with a semi-transparent background and blur effect
+    position: fixed; keeps the header fixed at the top of the viewport
+    width: 100%; makes the header span the full width of the viewport
+    top: 0; positions the header at the top of the page
+    left: 0; aligns the header to the left edge of the viewport
+    padding: 4rem 15%; adds padding around the header content
+    background-color: rgba(0, 0, 0, 0.3); sets a semi-transparent black background color
+    backdrop-filter: blur(10px); applies a blur effect to the background behind the header
+    display: flex; enables flexbox layout for child elements
+    justify-content: space-between; spaces out child elements evenly with space between them
+    align-items: center; vertically centers child elements within the header
+    z-index: 1000; ensures the header appears above other content on the page
+*/
 #menu-icon{
     font-size: 3.5rem;
     color: var(--main-color);
     display: none;
 }
-
+/*styles the menu icon for mobile navigation
+    font-size: 3.5rem; sets the size of the menu icon
+    color: var(--main-color); sets the color of the menu icon to the main accent color
+    display: none; hides the menu icon by default (will be shown on smaller screens)
+*/
 .logo{
     font-size: 3rem;
     color: var(--text-color);
@@ -46,19 +83,33 @@ body{
     cursor: pointer;
     transition:0.3s ease-in-out;
 }
+/*styles the logo text in the header
+    font-size: 3rem; sets the size of the logo text
+    color: var(--text-color); sets the color of the logo text to the defined text color
+    font-weight: 800; makes the logo text bold
+    cursor: pointer; changes the cursor to a pointer when hovering over the logo
+    transition:0.3s ease-in-out; adds a smooth transition effect for hover interactions
+*/
 .logo:hover{
     transform: scale(1.1);
 }
-
+/*adds a hover effect to the logo that scales it up slightly
+    transform: scale(1.1); increases the size of the logo by 10% when hovered
+*/
 span{
     background: linear-gradient(
         270deg,
         #DF8908 10%,
         #ff1d15 100%
     );
-    background-clip: text;
-    color: transparent;
+    background-clip: text; 
+    color: transparent;  
 }
+/*styles the span element to have a gradient text effect
+    background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%); creates a linear gradient background for the text
+    background-clip: text; clips the background to the text, making the gradient visible only on the text
+    color: transparent; makes the text color transparent so that only the gradient is visible
+*/
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
@@ -67,12 +118,22 @@ span{
     transition:0.3s ease-in-out;
     border-bottom: 3px solid transparent;
 }
-
+/*styles the navigation links in the navbar
+    font-size: 1.8rem; sets the size of the navigation links
+    color: var(--text-color); sets the color of the navigation links to the defined text color
+    margin-left: 4rem; adds left margin to space out the navigation links
+    font-weight: 500; sets a medium font weight for the navigation links
+    transition:0.3s ease-in-out; adds a smooth transition effect for hover interactions
+    border-bottom: 3px solid transparent; adds a transparent bottom border for hover effect
+*/
 .navbar a:hover{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-
+/*adds a hover effect to the navigation links that changes their color and adds a bottom border
+    color: var(--main-color); changes the text color to the main accent color when hovered
+    border-bottom: 3px solid var(--main-color); adds a solid bottom border in the main accent color when hovered
+*/
 .gradient-btn{
     font-size: 1.8rem;
     padding: 1rem 2rem;
@@ -89,6 +150,21 @@ span{
     border: none;
     text-wrap: nowrap;
 }
+/*styles the gradient button with a gradient background and rounded corners
+    font-size: 1.8rem; sets the size of the button text
+    padding: 1rem 2rem; adds padding inside the button for spacing
+    border-radius: 3rem; rounds the corners of the button
+    background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%); creates a linear gradient background for the button
+    letter-spacing: 0.3rem; adds spacing between letters in the button text
+    cursor: pointer; changes the cursor to a pointer when hovering over the button
+    transition:0.3s ease-in-out; adds a smooth transition effect for hover interactions
+    color: white; sets the text color of the button to white
+    border: none; removes any default border from the button
+    text-wrap: nowrap; prevents the button text from wrapping to a new line
+*/
 .gradient-btn:hover{
     transform: scale(1.05);
 }
+/*adds a hover effect to the gradient button that scales it up slightly
+    transform: scale(1.05); increases the size of the button by 5% when hovered
+*/
