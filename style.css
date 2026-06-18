@@ -628,11 +628,17 @@ section{
 .contact{
     background-color: var(--bg-color);
 }
+/*styles the contact section with a background color
+    background-color: var(--bg-color); sets the background color of the contact section to the primary background color
+*/
 .contact h2{
     margin-bottom: 3rem;
     color: var(--text-color);
 }
-
+/*styles the heading in the contact section
+    margin-bottom: 3rem; adds bottom margin to the heading for spacing
+    color: var(--text-color); sets the color of the heading text to the defined text color
+*/
 .contact form{
     display: flex;
     align-items: center;
@@ -641,6 +647,14 @@ section{
     margin: 5rem 0;
     text-align: center;
 }
+/*styles the contact form to center its content and add spacing between elements
+    display: flex; enables flexbox layout for the contact form
+    align-items: center; centers the content vertically within the contact form
+    justify-content: center; centers the content horizontally within the contact form
+    gap: 3rem; adds a gap of 3rem between child elements in the contact form
+    margin: 5rem 0; adds vertical margin above and below the contact form for spacing
+    text-align: center; centers text within the contact form
+*/
 .contact form .input-box input,
 .contact form textarea{
     width: 100%;
@@ -653,36 +667,74 @@ section{
     margin: 1.5rem 0;
     resize: none;
 }
-
+/*styles the input fields and textarea in the contact form
+    width: 100%; makes the input fields and textarea take up the full width of their container
+    padding: 2.5rem; adds padding inside the input fields and textarea for spacing
+    font-size: 1.8rem; sets the size of the text inside the input fields and textarea
+    color: var(--text-color); sets the text color to the defined text color
+    background-color: var(--bg-color); sets the background color to the primary background color
+    border-radius: 2rem; rounds the corners of the input fields and textarea
+    border: 2px solid var(--main-color); adds a solid border in the main accent color around the input fields and textarea
+    margin: 1.5rem 0; adds vertical margin above and below the input fields and textarea for spacing
+    resize: none; prevents resizing of the textarea by the user
+*/
 .footer{
     background-color: var(--second-bg-color);
     padding: 50px 0;
 }
+/*styles the footer section with a background color and padding
+    background-color: var(--second-bg-color); sets the background color of the footer to the secondary background color
+    padding: 50px 0; adds vertical padding above and below the footer content
+*/
 .footer .social-icons{
     text-align: center;
 }
+/*styles the social icons in the footer to be centered
+    text-align: center; centers the social icons horizontally within the footer
+*/
 .footer ul{
     text-align: center;
     font-size: 1.8rem;
 }
+/*styles the unordered list in the footer to be centered and have a specific font size
+    text-align: center; centers the list items horizontally within the footer
+    font-size: 1.8rem; sets the size of the text in the list items
+*/
 .footer ul li{
     display: inline-block;
     margin-left: 20px;
 }
+/*styles the list items in the footer to be displayed inline with spacing
+    display: inline-block; allows the list items to be displayed inline while maintaining block-level properties
+    margin-left: 20px; adds left margin to space out the list items
+*/
 
 .footer ul li a{
     color: white;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
+/*styles the links in the footer list items with color and hover effect
+    color: white; sets the text color of the links to white
+    border-bottom: 3px solid transparent; adds a transparent bottom border for hover effect
+    transition: 0.3s ease-in-out; adds a smooth transition effect for hover interactions
+*/
 .footer ul li a:hover{
     border-bottom: 3px solid var(--main-color);
 }
+/*adds a hover effect to the links in the footer list items that adds a bottom border
+    border-bottom: 3px solid var(--main-color); adds a solid bottom border in the main accent color when hovered
+*/
 .footer .copyrigth{
     text-align: center;
     margin-top: 40px;
     font-size: 16px;
 }
+/*styles the copyright text in the footer to be centered with margin and font size
+    text-align: center; centers the copyright text horizontally within the footer
+    margin-top: 40px; adds top margin above the copyright text for spacing
+    font-size: 16px; sets the size of the copyright text
+*/
 
 @media(max-width:1285px){
     #menu-icon{
@@ -739,3 +791,16 @@ section{
         flex-direction: column;
     }
 }
+/*media query for screens with a maximum width of 1285px to adjust layout and styles for smaller screens
+    #menu-icon{ display: block; } shows the menu icon for mobile navigation
+    .navbar{ position: absolute; top: 100%; right: 0; width: 50%; padding: 1rem 3rem; background: rgba(0, 0, 0, 0.8); border-top-left-radius: 2rem; border-left: 2px solid var(--main-color); border-bottom: 2px solid var(--main-color); display: none; } styles the navbar for mobile view with absolute positioning and a semi-transparent background
+    .navbar a{ display: block; font-size: 2rem; margin: 3rem 0; color: var(--text-color); } styles the navigation links in the navbar for mobile view
+    .navbar.active{ display: block; } shows the navbar when it is active (e.g., when the menu icon is clicked)
+    .gradient-btn{ display: none; } hides the gradient button on smaller screens
+    .home{ flex-direction: column-reverse; margin: 5rem 0; gap: 5rem; } adjusts the layout of the home section to stack content vertically
+    .home-content{ align-items: center; text-align: center; } centers the home content on smaller screens
+    .home-img img{ width: 56vw; } adjusts the size of the home image for smaller screens
+    .about{ flex-direction: column-reverse; text-align: center; } stacks the about section content vertically and centers it
+    .about h2{ text-align: center; margin: 2remn 0; } centers the heading in the about section and adds vertical margin
+    .about-img img{ width: 52vw; } adjusts the size of the about image for smaller screens
+    .contact form{ flex-direction: column; } stacks the contact form fields vertically on smaller screens
