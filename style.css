@@ -434,21 +434,37 @@ section{
     font-size: 7rem;
     margin: 5rem 0;
 }
+/*styles the heading class for section titles
+    text-align: center; centers the heading text
+    font-size: 7rem; sets the size of the heading text
+    margin: 5rem 0; adds vertical margin above and below the heading for spacing
+*/
 .services{
     background-color: var(--bg-color);
     color:black;
 }
+/*styles the services section with a background color and text color
+    background-color: var(--bg-color); sets the background color of the services section to the primary background color
+    color: black; sets the text color of the services section to black
+*/
 .services h2{
     color: var(--text-color);
 }
-
+/*styles the heading in the services section
+    color: var(--text-color); sets the color of the heading text to the defined text color
+*/
 .services-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center; 
     gap: 2.5rem;
 }
-
+/*styles the container for service boxes to use a responsive grid layout
+    display: grid; enables CSS Grid layout for the services container
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); creates a responsive grid with columns that fit the available space, with a minimum width of 300px and maximum of 1fr (fraction of available space)
+    align-items: center; vertically centers the items within each grid cell
+    gap: 2.5rem; adds a gap of 2.5rem between grid items
+*/
 .service-box{
     display: flex;
     justify-content: center;
@@ -460,13 +476,29 @@ section{
     border: 5px solid transparent;
     transition: 0.4s ease-in-out;
 }
-
+/*styles the individual service boxes with a background color, size, and hover effect
+    display: flex; enables flexbox layout for the service box
+    justify-content: center; centers the content horizontally within the service box
+    align-items: center; centers the content vertically within the service box
+    background-color: var(--main-color); sets the background color of the service box to the main accent color
+    height: 600px; sets a fixed height for the service box
+    border-radius: 3rem; rounds the corners of the service box
+    cursor: pointer; changes the cursor to a pointer when hovering over the service box
+    border: 5px solid transparent; adds a transparent border for styling purposes
+    transition: 0.4s ease-in-out; adds a smooth transition effect for hover interactions
+*/
 .service-box:hover{
     background: var(--second-bg-color);
     color: var(--main-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
+/*adds a hover effect to the service boxes that changes their background and text color, adds a border, and scales them up slightly
+    background: var(--second-bg-color); changes the background color of the service box to the secondary background color when hovered
+    color: var(--main-color); changes the text color of the service box to the main accent color when hovered
+    border: 5px solid var(--main-color); adds a solid border in the main accent color around the service box when hovered
+    transform: scale(1.03); increases the size of the service box by 3% when hovered
+*/
 .service-info{
     display: flex;
     flex-direction: column;
@@ -475,27 +507,46 @@ section{
     justify-content: center;
     padding: 5rem;
 }
-
+/*styles the content within the service boxes to be arranged in a column and centered
+    display: flex; enables flexbox layout for the service info
+    flex-direction: column; arranges child elements in a vertical column
+    align-items: center; centers child elements horizontally within the service info
+    text-align: center; centers text within the service info
+    justify-content: center; centers child elements vertically within the service info
+    padding: 5rem; adds padding around the content of the service info for spacing
+*/
 .service-info h4{
     font-size: 4rem;
     margin: 2rem 0;
     font-weight: 800;
 }
-
+/*styles the heading within the service info
+    font-size: 4rem; sets the size of the heading text
+    margin: 2rem 0; adds vertical margin above and below the heading for spacing
+    font-weight: 800; makes the heading text bold
+*/
 .service-info p{
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.7;
 }
-
+/*styles the paragraph text within the service info
+    font-size: 1.4rem; sets the size of the paragraph text
+    font-weight: 600; sets a semi-bold font weight for the paragraph text
+    line-height: 1.7; sets the line height for better readability
+*/
 .service-info i{
     font-size: 8rem;
 }
-
+/*styles the icon within the service info
+    font-size: 8rem; sets the size of the icon
+*/
 .projects{
     background-color: var(--second-bg-color);
 }
-
+/*styles the projects section with a different background color
+    background-color: var(--second-bg-color); sets the background color of the projects section to the secondary background color
+*/
 .projects-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -503,6 +554,13 @@ section{
     gap: 3rem;
     row-gap: 5rem;
 }
+/*styles the container for project cards to use a responsive grid layout
+    display: grid; enables CSS Grid layout for the projects box
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); creates a responsive grid with columns that fit the available space, with a minimum width of 350px and maximum of 1fr (fraction of available space)
+    place-items: center; centers the items both horizontally and vertically within each grid cell
+    gap: 3rem; adds a gap of 3rem between grid items
+    row-gap: 5rem; adds a larger gap of 5rem between rows of grid items
+*/
 .project-card{
     display: flex;
     flex-direction: column;
@@ -519,23 +577,50 @@ section{
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3s ease;
 }
-
+/*styles the individual project cards with a background color, border, and hover effect
+    display: flex; enables flexbox layout for the project card
+    flex-direction: column; arranges child elements in a vertical column
+    align-items: center; centers child elements horizontally within the project card
+    justify-content: center; centers child elements vertically within the project card
+    text-align: center; centers text within the project card
+    background-color: var(--bg-color); sets the background color of the project card to the primary background color
+    border: 2px solid var(--main-color); adds a solid border in the main accent color around the project card
+    border-radius: 3rem; rounds the corners of the project card
+    gap: 2rem; adds a gap of 2rem between child elements in the project card
+    padding: 5rem 2rem; adds padding inside the project card for spacing
+    overflow: hidden; hides any content that overflows the boundaries of the project card
+    cursor: pointer; changes the cursor to a pointer when hovering over the project card
+    box-shadow: 0 0 5px var(--main-color); adds a subtle shadow around the project card using the main accent color
+    transition: 0.3s ease; adds a smooth transition effect for hover interactions
+*/
 .project-card:hover{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color);
     transform: scale(1.02);
 }
-
+/*adds a hover effect to the project cards that intensifies the shadow and scales them up slightly
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color); creates multiple layers of shadow for a glowing effect when hovered
+    transform: scale(1.02); increases the size of the project card by 2% when hovered
+*/
 .project-card img{
     max-width: 300px;
     border-radius: 2em;
     object-fit: cover;
 }
-
+/*styles the image within the project card to have a maximum width, rounded corners, and maintain aspect ratio
+    max-width: 300px; sets the maximum width of the image to 300 pixels
+    border-radius: 2em; rounds the corners of the image
+    object-fit: cover; ensures the image covers the entire area of its container while maintaining its aspect ratio
+*/
 .project-card h3{
     font-size: 3rem;
 }
-
+/*styles the heading within the project card
+    font-size: 3rem; sets the size of the heading text
+*/
 .project-card p{
     font-size: 1.6rem;
 }
+/*styles the paragraph text within the project card
+    font-size: 1.6rem; sets the size of the paragraph text
+*/
