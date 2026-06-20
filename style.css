@@ -804,3 +804,71 @@ section{
     .about h2{ text-align: center; margin: 2remn 0; } centers the heading in the about section and adds vertical margin
     .about-img img{ width: 52vw; } adjusts the size of the about image for smaller screens
     .contact form{ flex-direction: column; } stacks the contact form fields vertically on smaller screens
+*/
+/* this part below, i realized that i wrote it in scss*/
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+}
+
+svg {
+    position: absolute;
+    top: 12em;
+    left: 10vw;
+    width: 50vw;
+
+    .mask {
+        width: 0;
+    }
+}
+
+.container {
+    display: flex;
+    width: 300vw;
+
+    .col {
+        display: flex;
+        gap: 3em;
+        
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    section {
+        width: 100vw;
+        padding: 20vw 10vw;
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 2rem;
+            width: 50vw;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 3em;
+            width: 100%;
+            height: 300px;
+            padding: 0;
+
+            li {
+                background: white;
+                border-radius: .3em;
+                flex-grow: 1;
+            }
+        }
+
+    }
+}
+
+
+
