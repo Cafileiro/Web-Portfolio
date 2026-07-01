@@ -455,7 +455,7 @@ section{
 */
 .services-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     align-items: center; 
     gap: 2.5rem;
 }
@@ -776,6 +776,9 @@ section{
     .home-img img{
         width: 56vw;
     }
+    .projects-box{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
     .about{
         flex-direction: column-reverse;
         text-align: center;
@@ -805,7 +808,7 @@ section{
     .about-img img{ width: 52vw; } adjusts the size of the about image for smaller screens
     .contact form{ flex-direction: column; } stacks the contact form fields vertically on smaller screens
 */
-/* this part below, i realized that i wrote it in scss*/
+/* this part below, i realized that i wrote it in scss, but its ok because of autoconversion*/
 .wrapper {
     overflow-x: hidden;
     position: relative;
