@@ -803,6 +803,7 @@ section{
     .home{ flex-direction: column-reverse; margin: 5rem 0; gap: 5rem; } adjusts the layout of the home section to stack content vertically
     .home-content{ align-items: center; text-align: center; } centers the home content on smaller screens
     .home-img img{ width: 56vw; } adjusts the size of the home image for smaller screens
+    .project-box{} adjust the min size for smaller devices in order to prevent horizontal scrolling
     .about{ flex-direction: column-reverse; text-align: center; } stacks the about section content vertically and centers it
     .about h2{ text-align: center; margin: 2remn 0; } centers the heading in the about section and adds vertical margin
     .about-img img{ width: 52vw; } adjusts the size of the about image for smaller screens
@@ -872,6 +873,17 @@ svg {
 
     }
 }
-
+/*
+    .wrapper { overflow-x: hidden; position: relative; } prevents horizontal scrolling and sets the wrapper to relative positioning
+    * { box-sizing: border-box; } ensures that padding and borders are included in the total width and height of elements
+    svg { position: absolute; top: 12em; left: 10vw; width: 50vw; } positions the SVG element absolutely within the wrapper, with specific top and left offsets and a width of 50% of the viewport width
+    .mask { width: 0; } sets the width of the mask class to 0, which may be used for masking effects in the SVG
+    .container { display: flex; width: 300vw; } creates a flex container
+    section { width: 100vw; padding: 20vw 10vw; } sets each section to take up the full viewport width and adds padding
+    h1 { font-size: 5rem; margin-bottom: 15px; } sets the size of the heading text and adds bottom margin
+    p { font-size: 2rem; width: 50vw; } sets the size of the paragraph text and limits its width
+    ul { list-style-type: none; display: flex; gap: 3em; width: 100%; height: 300px; padding: 0; } styles the unordered list to remove default list styling, display items in a row with gaps, and set dimensions
+    li { background: white; border-radius: .3em; flex-grow: 1; } styles the list items with a white background, rounded corners, and allows them to grow to fill available space
+*/
 
 
