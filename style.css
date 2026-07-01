@@ -455,7 +455,7 @@ section{
 */
 .services-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     align-items: center; 
     gap: 2.5rem;
 }
@@ -736,76 +736,7 @@ section{
     font-size: 16px; sets the size of the copyright text
 */
 
-@media(max-width:1285px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3rem;
-        background: rgba(0, 0, 0, 0.8);
-        border-top-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: none;
-    }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: var(--text-color);
-    }
-    .navbar.active{
-        display: block;
-    }
-    .gradient-btn{
-        display: none;
-    }
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 0;
-        gap: 5rem;
-    }
-    .home-content{
-        align-items: center;
-        text-align: center;
-    }
-    .home-img img{
-        width: 56vw;
-    }
-    .about{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .about h2{
-        text-align: center;
-        margin: 2remn 0;
-    }
-    .about-img img{
-        width: 52vw;
-    }
-    .contact form{
-        flex-direction: column;
-    }
-}
-/*media query for screens with a maximum width of 1285px to adjust layout and styles for smaller screens
-    #menu-icon{ display: block; } shows the menu icon for mobile navigation
-    .navbar{ position: absolute; top: 100%; right: 0; width: 50%; padding: 1rem 3rem; background: rgba(0, 0, 0, 0.8); border-top-left-radius: 2rem; border-left: 2px solid var(--main-color); border-bottom: 2px solid var(--main-color); display: none; } styles the navbar for mobile view with absolute positioning and a semi-transparent background
-    .navbar a{ display: block; font-size: 2rem; margin: 3rem 0; color: var(--text-color); } styles the navigation links in the navbar for mobile view
-    .navbar.active{ display: block; } shows the navbar when it is active (e.g., when the menu icon is clicked)
-    .gradient-btn{ display: none; } hides the gradient button on smaller screens
-    .home{ flex-direction: column-reverse; margin: 5rem 0; gap: 5rem; } adjusts the layout of the home section to stack content vertically
-    .home-content{ align-items: center; text-align: center; } centers the home content on smaller screens
-    .home-img img{ width: 56vw; } adjusts the size of the home image for smaller screens
-    .about{ flex-direction: column-reverse; text-align: center; } stacks the about section content vertically and centers it
-    .about h2{ text-align: center; margin: 2remn 0; } centers the heading in the about section and adds vertical margin
-    .about-img img{ width: 52vw; } adjusts the size of the about image for smaller screens
-    .contact form{ flex-direction: column; } stacks the contact form fields vertically on smaller screens
-*/
-/* this part below, i realized that i wrote it in scss*/
+/* this part below, i realized that i wrote it in scss, but its ok because of autoconversion*/
 .wrapper {
     overflow-x: hidden;
     position: relative;
@@ -869,6 +800,150 @@ svg {
 
     }
 }
+/*
+    .wrapper { overflow-x: hidden; position: relative; } prevents horizontal scrolling and sets the wrapper to relative positioning
+    * { box-sizing: border-box; } ensures that padding and borders are included in the total width and height of elements
+    svg { position: absolute; top: 12em; left: 10vw; width: 50vw; } positions the SVG element absolutely within the wrapper, with specific top and left offsets and a width of 50% of the viewport width
+    .mask { width: 0; } sets the width of the mask class to 0, which may be used for masking effects in the SVG
+    .container { display: flex; width: 300vw; } creates a flex container
+    section { width: 100vw; padding: 20vw 10vw; } sets each section to take up the full viewport width and adds padding
+    h1 { font-size: 5rem; margin-bottom: 15px; } sets the size of the heading text and adds bottom margin
+    p { font-size: 2rem; width: 50vw; } sets the size of the paragraph text and limits its width
+    ul { list-style-type: none; display: flex; gap: 3em; width: 100%; height: 300px; padding: 0; } styles the unordered list to remove default list styling, display items in a row with gaps, and set dimensions
+    li { background: white; border-radius: .3em; flex-grow: 1; } styles the list items with a white background, rounded corners, and allows them to grow to fill available space
+*/
 
+@media(max-width:1285px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-top-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .navbar.active{
+        display: block;
+    }
+    .gradient-btn{
+        display: none;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-img img{
+        width: 56vw;
+    }
+    .service-info h4{
+        font-size: 3.5rem;
+        margin: 1.5rem 0;
+    }
+    .service-info i{
+        font-size: 7rem;
+    }
+    .projects-box{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2{
+        text-align: center;
+        margin: 2remn 0;
+    }
+    .about-img img{
+        width: 52vw;
+    }
+    .contact form{
+        flex-direction: column;
+    }
+
+    /*This below corresponds to the lateral scroll section*/
+    svg { 
+        position: absolute;
+        top: 6em;
+        left: 10vw;
+        width: 80vw;
+        
+    }
+    .container {
+    .col {
+        display: flex;
+        gap: 3em;
+        
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    section {
+        width: 100vw;
+        padding: 50vw 10vw;
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 2rem;
+            width: 50vw;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 3em;
+            width: 100%;
+            height: 300px;
+            padding: 0;
+
+            li {
+                background: white;
+                border-radius: .3em;
+                flex-grow: 1;
+            }
+        }
+
+    }
+}
+
+
+}
+/*media query for screens with a maximum width of 1285px to adjust layout and styles for smaller screens
+    #menu-icon{ display: block; } shows the menu icon for mobile navigation
+    .navbar{ position: absolute; top: 100%; right: 0; width: 50%; padding: 1rem 3rem; background: rgba(0, 0, 0, 0.8); border-top-left-radius: 2rem; border-left: 2px solid var(--main-color); border-bottom: 2px solid var(--main-color); display: none; } styles the navbar for mobile view with absolute positioning and a semi-transparent background
+    .navbar a{ display: block; font-size: 2rem; margin: 3rem 0; color: var(--text-color); } styles the navigation links in the navbar for mobile view
+    .navbar.active{ display: block; } shows the navbar when it is active (e.g., when the menu icon is clicked)
+    .gradient-btn{ display: none; } hides the gradient button on smaller screens
+    .home{ flex-direction: column-reverse; margin: 5rem 0; gap: 5rem; } adjusts the layout of the home section to stack content vertically
+    .home-content{ align-items: center; text-align: center; } centers the home content on smaller screens
+    .home-img img{ width: 56vw; } adjusts the size of the home image for smaller screens
+    .project-box{} adjust the min size for smaller devices in order to prevent horizontal scrolling
+    .about{ flex-direction: column-reverse; text-align: center; } stacks the about section content vertically and centers it
+    .about h2{ text-align: center; margin: 2remn 0; } centers the heading in the about section and adds vertical margin
+    .about-img img{ width: 52vw; } adjusts the size of the about image for smaller screens
+    .contact form{ flex-direction: column; } stacks the contact form fields vertically on smaller screens
+*/
 
 
