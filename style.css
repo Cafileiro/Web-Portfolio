@@ -853,6 +853,13 @@ svg {
     .home-img img{
         width: 56vw;
     }
+    .service-info h4{
+        font-size: 3.5rem;
+        margin: 1.5rem 0;
+    }
+    .service-info i{
+        font-size: 7rem;
+    }
     .projects-box{
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
