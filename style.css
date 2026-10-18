@@ -624,7 +624,12 @@ section{
 /*styles the paragraph text within the project card
     font-size: 1.6rem; sets the size of the paragraph text
 */
-
+.project-card a{
+    outline: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+}
 .contact{
     background-color: var(--bg-color);
 }
@@ -677,6 +682,12 @@ section{
     border: 2px solid var(--main-color); adds a solid border in the main accent color around the input fields and textarea
     margin: 1.5rem 0; adds vertical margin above and below the input fields and textarea for spacing
     resize: none; prevents resizing of the textarea by the user
+*/
+.oh-no-bot{
+    display: none !important;
+}
+/*styles the honeypot field to be hidden
+    display: none !important; hides the honeypot field from view
 */
 .footer{
     background-color: var(--second-bg-color);
