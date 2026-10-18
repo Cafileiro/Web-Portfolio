@@ -1,6 +1,6 @@
 # Hi, I'm Rafael Iralde Dominguez 👋
 
-> **Computer Engineering Student at UPM**[cite: 1]  
+> **Computer Engineering Student at UPM**  
 > *Check out my live portfolio deployed via **GitHub Pages**!*
 
 ---
@@ -14,12 +14,12 @@ A high-performance Nintendo Entertainment System emulator built from scratch in 
 ---
 
 ## 🛠️ Quick Skills
-* **Languages:** Java, C++, Python[cite: 1]
-* **Tools & Systems:** Linux, Docker, Git / GitHub workflows[cite: 1]
+* **Languages:** Java, C++, Python
+* **Tools & Systems:** Linux, Docker, Git / GitHub workflows
 
 ---
 
 ## 📫 Connect With Me
-* **GitHub:** [github.com/Cafileiro](https://github.com/Cafileiro)[cite: 1]
-* **LinkedIn:** [linkedin.com/in/rafaeliralde-dominguez](http://www.linkedin.com/in/rafaeliralde-dominguez)[cite: 1]
-* **Email:** [rafaeliralde.dev@gmail.com](mailto:rafaeliralde.dev@gmail.com)[cite: 1]
+* **GitHub:** [github.com/Cafileiro](https://github.com/Cafileiro)
+* **LinkedIn:** [linkedin.com/in/rafaeliralde-dominguez](http://www.linkedin.com/in/rafaeliralde-dominguez)
+* **Email:** [rafaeliralde.dev@gmail.com](mailto:rafaeliralde.dev@gmail.com)
